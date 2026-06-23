@@ -1,5 +1,5 @@
 ---
-title: "How to Connect Two Phones in Griilll"
+title: "Connecting Two Phones in Griilll: Proximity Pairing"
 sidebarTitle: "Connect Phones"
 description: "Use Griilll's proximity pairing to link two phones in under 10 seconds — no codes, no Bluetooth pairing screens, just bring devices close."
 ---
@@ -34,17 +34,15 @@ Griilll uses proximity detection to find another Griilll player nearby. Both pla
 
 Griilll needs a small set of device permissions to detect nearby phones and exchange game data. You'll be prompted to grant these on first launch.
 
-<AccordionGroup>
-  <Accordion title="Bluetooth">
-    Griilll uses Bluetooth to detect when another device running the app is nearby. This is the primary signal used for proximity detection. Bluetooth does **not** need to be paired at the OS level — Griilll handles its own discovery layer on top.
-  </Accordion>
-  <Accordion title="Local Network">
-    Once two phones are detected, Griilll switches to local network communication to exchange game data quickly and reliably. This permission allows the app to talk to other devices on the same local wireless network.
-  </Accordion>
-  <Accordion title="Location (some devices)">
-    On certain OS versions — particularly Android — the system requires location permission before an app can scan for nearby devices on a local network. Griilll does **not** record or store your location. This permission is purely a platform-level requirement for local wireless scanning.
-  </Accordion>
-</AccordionGroup>
+<Accordion title="Bluetooth">
+  Griilll uses Bluetooth to detect when another device running the app is nearby. This is the primary signal used for proximity detection. Bluetooth does **not** need to be paired at the OS level — Griilll handles its own discovery layer on top.
+</Accordion>
+<Accordion title="Local Network">
+  Once two phones are detected, Griilll switches to local network communication to exchange game data quickly and reliably. This permission allows the app to talk to other devices on the same local wireless network.
+</Accordion>
+<Accordion title="Location (some devices)">
+  On certain OS versions — particularly Android — the system requires location permission before an app can scan for nearby devices on a local network. Griilll does **not** record or store your location. This permission is purely a platform-level requirement for local wireless scanning.
+</Accordion>
 
 <Warning>
   If either player denies any of the required permissions, pairing will fail. To fix this, go to your device's **Settings → Apps → Griilll → Permissions** and re-enable the relevant permissions, then relaunch the app and try connecting again.

@@ -1,0 +1,61 @@
+---
+title: "How to Connect Two Phones in Griilll"
+sidebarTitle: "Connect Phones"
+description: "Use Griilll's proximity pairing to link two phones in under 10 seconds — no codes, no Bluetooth pairing screens, just bring devices close."
+---
+
+Griilll uses proximity detection to find another Griilll player nearby. Both players open the app and hold their phones within about 30 cm of each other. The app discovers the other device automatically and asks both players to confirm the match — no pairing screens, no codes to type, no QR codes to scan. From tap to connected takes under 10 seconds.
+
+## Pairing Steps
+
+<Steps>
+  <Step title="Open Griilll on both phones">
+    Both players launch the Griilll app. You should each land on the home screen showing your chip balance and the **Find Opponent** button.
+  </Step>
+  <Step title="Tap 'Find Opponent' on both devices">
+    Each player taps **Find Opponent** at the same time. The app begins scanning for a nearby Griilll session using local wireless. A pulsing animation confirms that scanning is active.
+  </Step>
+  <Step title="Bring phones close together">
+    Hold both phones within **30 cm (about 12 inches)** of each other. You don't need to touch them together — just bring them into close range and keep them still for a moment while the app locks on.
+  </Step>
+  <Step title="Confirm your opponent">
+    Both players see the other person's username appear on screen. Verify it's who you expect, then tap **Confirm** on both devices. If you don't recognise the username, tap **Cancel** and try again.
+  </Step>
+  <Step title="You're connected">
+    Once both players confirm, the app transitions to the stake-setting screen. A green connection indicator appears in the top corner of each phone, showing the link is live and stable.
+  </Step>
+</Steps>
+
+<Tip>
+  Keep both phones close to each other until the game fully loads. Moving them apart immediately after tapping Confirm can interrupt the handshake before the connection is established.
+</Tip>
+
+## What Permissions Are Needed?
+
+Griilll needs a small set of device permissions to detect nearby phones and exchange game data. You'll be prompted to grant these on first launch.
+
+<AccordionGroup>
+  <Accordion title="Bluetooth">
+    Griilll uses Bluetooth to detect when another device running the app is nearby. This is the primary signal used for proximity detection. Bluetooth does **not** need to be paired at the OS level — Griilll handles its own discovery layer on top.
+  </Accordion>
+  <Accordion title="Local Network">
+    Once two phones are detected, Griilll switches to local network communication to exchange game data quickly and reliably. This permission allows the app to talk to other devices on the same local wireless network.
+  </Accordion>
+  <Accordion title="Location (some devices)">
+    On certain OS versions — particularly Android — the system requires location permission before an app can scan for nearby devices on a local network. Griilll does **not** record or store your location. This permission is purely a platform-level requirement for local wireless scanning.
+  </Accordion>
+</AccordionGroup>
+
+<Warning>
+  If either player denies any of the required permissions, pairing will fail. To fix this, go to your device's **Settings → Apps → Griilll → Permissions** and re-enable the relevant permissions, then relaunch the app and try connecting again.
+</Warning>
+
+## Connection Indicator
+
+Once both players are linked, a **green dot with a pulsing ring** appears in the top-right corner of the screen on both devices. This indicator means:
+
+- ✅ **Solid green dot** — connection is established and stable
+- 🔄 **Pulsing ring** — data is being exchanged between phones (normal during gameplay)
+- 🔴 **Red dot** — connection has been lost; the round will pause and prompt you to reconnect or forfeit
+
+As long as you stay within a reasonable range (a few meters) of your opponent, the connection remains solid throughout the game.

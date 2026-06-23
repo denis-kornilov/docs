@@ -1,0 +1,49 @@
+---
+title: "Griilll Fair Play and How Results Are Determined"
+sidebarTitle: "Fair Play"
+description: "Learn how Griilll ensures every round is fair: provably random outcomes, anti-cheat measures, and what to do if you suspect foul play."
+---
+
+Griilll is built on fairness. Every round outcome is determined by a provably fair algorithm — neither player can predict, influence, or manipulate the result. This page explains how the system works and what protections are in place.
+
+## How Outcomes Are Decided
+
+At the moment both players tap, each device generates a random seed. The two seeds are combined using a hash function. The combined hash determines the winner. Because both seeds are required, neither player can control the outcome alone.
+
+After each round, you can tap **Verify Round** on the result screen to see the seeds and check the math yourself.
+
+## What "Provably Fair" Means
+
+<Note>
+  Provably fair means the outcome can be verified after the fact using the round's seed values. Both seeds are revealed only after the round ends, so neither player can game the result. Tap **Verify Round** on any result screen to audit a round.
+</Note>
+
+## Anti-Cheat Protections
+
+Griilll uses multiple layers of protection to keep every round honest:
+
+- **Simultaneous tap detection:** both players must tap within the same 200ms window
+- **Tamper detection:** if the app detects modified code or a rooted/jailbroken device, the game session is rejected
+- **Balance integrity:** chip balances are stored server-side and signed — they cannot be edited locally
+
+## Fair Play FAQs
+
+<Accordion title="Can my opponent cheat by tapping early?">
+  No. The round only locks in when both players' taps are registered within the same window. Tapping early has no effect on the random seed generation.
+</Accordion>
+
+<Accordion title="Can the app be rigged to always win?">
+  No. The outcome relies on both devices' seeds. A modified app on one device cannot predict or influence the seed from the opponent's device.
+</Accordion>
+
+<Accordion title="I lost a round and I think something went wrong">
+  You can tap **Verify Round** on any past round in your History to check the seeds. If you believe there was a genuine error, contact [support@griilll.com](mailto:support@griilll.com) with the round ID (visible in History).
+</Accordion>
+
+<Accordion title="What if someone disconnects right before losing?">
+  If a player disconnects after both taps are registered, the result still stands and chips move accordingly. If the connection drops before taps are registered, the round is cancelled and no chips move.
+</Accordion>
+
+<Tip>
+  After any round that feels off, tap **Verify Round** in your History to pull up the full seed breakdown. Every round is auditable — if the math checks out, the result was fair.
+</Tip>

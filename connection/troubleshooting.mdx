@@ -1,0 +1,148 @@
+---
+title: "Fix Griilll Connection Problems"
+sidebarTitle: "Troubleshooting"
+description: "Resolve common Griilll pairing issues: phones not detecting each other, dropped connections mid-game, and permission errors."
+---
+
+Most Griilll connection issues come down to permissions, proximity, or background app restrictions. This guide covers the most common problems and how to fix them in under a minute.
+
+<Tip>
+  The single fastest fix for most pairing problems is toggling Bluetooth **off**, waiting three seconds, then turning it back **on** — on both phones simultaneously.
+</Tip>
+
+## Common Issues
+
+<Accordion title="Phones aren't detecting each other">
+  Before troubleshooting further, run through this checklist on **both** devices:
+
+  - Bluetooth is turned **on**
+  - Both players are on the **Find Opponent** screen — not the home screen or any other view
+  - Phones are within **30 cm** of each other
+  - Neither phone has **Low Power Mode** (iOS) or **Battery Saver** (Android) enabled — these modes throttle BLE scanning and can prevent discovery entirely
+
+  If everything looks correct but detection still isn't happening:
+
+  <Steps>
+    <Step title="Toggle Bluetooth">
+      On both phones, turn Bluetooth off, wait three seconds, then turn it back on.
+    </Step>
+    <Step title="Force-quit and reopen Griilll">
+      Fully close the app on both devices — don't just switch away from it — then reopen and navigate back to Find Opponent.
+    </Step>
+    <Step title="Move closer">
+      Hold the phones 10–15 cm apart and keep them still. Even a small reduction in distance can make the difference in a noisy Bluetooth environment.
+    </Step>
+  </Steps>
+</Accordion>
+
+<Accordion title="Permission denied error">
+  Griilll requires **Bluetooth** and **Local Network** permissions to find and communicate with nearby devices. If you see a permission denied error, you'll need to grant these manually.
+
+  **iOS**
+  <Steps>
+    <Step title="Enable Bluetooth permission">
+      Go to **Settings → Privacy & Security → Bluetooth** and toggle **Griilll** on.
+    </Step>
+    <Step title="Enable Local Network permission">
+      Go to **Settings → Privacy & Security → Local Network** and toggle **Griilll** on.
+    </Step>
+    <Step title="Restart the app">
+      Force-quit Griilll and reopen it. The permission denied error should be gone.
+    </Step>
+  </Steps>
+
+  **Android**
+  <Steps>
+    <Step title="Open app permissions">
+      Go to **Settings → Apps → Griilll → Permissions**.
+    </Step>
+    <Step title="Grant required permissions">
+      Enable **Nearby Devices** and **Wi-Fi** (listed under location or nearby devices depending on your Android version).
+    </Step>
+    <Step title="Restart the app">
+      Force-quit Griilll and reopen it to apply the changes.
+    </Step>
+  </Steps>
+
+  <Warning>
+    On Android 12 and later, Nearby Devices permission is separate from location. Make sure you enable **both** if your permissions screen shows them individually.
+  </Warning>
+</Accordion>
+
+<Accordion title="Connection dropped mid-game">
+  If your connection drops during a round, Griilll automatically cancels that round and returns both players to the home screen.
+
+  <Note>
+    **No chips are ever deducted for a cancelled round.** Your stake is returned in full to both players the moment a disconnection is detected. You will never lose chips due to a technical dropout.
+  </Note>
+
+  To reconnect and start a new round:
+
+  <Steps>
+    <Step title="Return to the main screen">
+      Both players should confirm they're back on the Griilll home screen before trying again.
+    </Step>
+    <Step title="Tap Find Opponent">
+      Both players tap **Find Opponent** from the main screen. The pairing process restarts fresh.
+    </Step>
+    <Step title="Stay close and keep the app in the foreground">
+      Hold phones within 30 cm and don't switch away from the app until the game round is complete.
+    </Step>
+  </Steps>
+</Accordion>
+
+<Accordion title="Game is slow or freezing">
+  Sluggish gameplay is usually a sign of local network congestion — too many devices competing for the same wireless channels.
+
+  Try the following in order:
+
+  - **Move to a less crowded area.** Fewer nearby Bluetooth and WiFi devices means less signal interference.
+  - **Disable mobile data** on both phones. This forces Griilll to use only local communication channels, which can improve responsiveness.
+  - **Restart Griilll on both phones.** Force-quit the app on both devices, reopen it, and start a new pairing session.
+
+  If the problem only happens in one specific location, that environment likely has heavy wireless congestion. Try a different spot.
+</Accordion>
+
+<Accordion title="I see multiple opponents in the list">
+  When several Griilll players are nearby, the app shows all of them as potential opponents. Here's how to match with the right person:
+
+  <Steps>
+    <Step title="Identify your opponent's username">
+      Ask your real-world opponent to tell you their Griilll username before either of you taps anything.
+    </Step>
+    <Step title="Tap the correct username">
+      Find that username in your list and tap it to send a match request.
+    </Step>
+    <Step title="Cross-confirm before tapping Confirm">
+      Your opponent will see a request from your username. Ask them to verify your username appears on their screen before either of you taps **Confirm**. This prevents accidental games against strangers.
+    </Step>
+  </Steps>
+</Accordion>
+
+<Accordion title="App crashes during pairing">
+  Crashes during pairing are almost always caused by an outdated app version.
+
+  <Steps>
+    <Step title="Force-quit the app">
+      Fully close Griilll — don't just navigate away from it.
+    </Step>
+    <Step title="Check for updates">
+      Open the **App Store** (iOS) or **Play Store** (Android), search for Griilll, and install any pending update.
+    </Step>
+    <Step title="Reopen Griilll">
+      Launch the app and try pairing again.
+    </Step>
+    <Step title="Reinstall if the crash persists">
+      Uninstall Griilll, then reinstall it from the store. Your chip balance is stored securely in the cloud and will be fully restored as soon as you log back in — nothing is lost.
+    </Step>
+  </Steps>
+</Accordion>
+
+## Still Having Issues?
+
+If none of the steps above resolve your problem, reach out directly:
+
+- **In-app support:** tap **Profile → Help** to submit a report with automatic diagnostic info attached
+- **Email:** [support@griilll.com](mailto:support@griilll.com)
+
+Include your device model, OS version, and a brief description of what happened — it helps the support team get back to you faster.

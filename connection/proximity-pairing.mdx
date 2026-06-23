@@ -1,0 +1,51 @@
+---
+title: "Proximity Pairing: How Griilll Finds Your Opponent"
+sidebarTitle: "Proximity Pairing"
+description: "Griilll uses Bluetooth and local wireless to detect nearby devices running the app — no codes, no internet, just bring phones together."
+---
+
+Griilll's proximity pairing is the technology that lets two phones find each other automatically. When both devices run Griilll and are within range, they exchange a silent handshake over Bluetooth and local wireless. No internet connection is needed.
+
+## How It Works
+
+Pairing happens in seconds and requires no manual code entry or account linking. Here's what happens under the hood:
+
+<Steps>
+  <Step title="Open the app and tap Find Opponent">
+    Both players must be on the Find Opponent screen at the same time. The pairing process won't start from the home screen.
+  </Step>
+  <Step title="Phones start broadcasting">
+    Each device begins emitting a short, silent signal over Bluetooth Low Energy (BLE). This signal is only readable by other Griilll installs — it contains no personal information.
+  </Step>
+  <Step title="Mutual detection triggers a prompt">
+    When two Griilll signals are detected within range (roughly 30 cm to 1 m), both phones simultaneously prompt their owners to confirm they want to play each other. You'll see your opponent's in-app username before you commit.
+  </Step>
+  <Step title="Game data flows locally">
+    After both players confirm, all game data moves over your local network — either your shared WiFi or a direct peer-to-peer connection. No data leaves the local environment during play.
+  </Step>
+</Steps>
+
+## Range and Environment Tips
+
+Getting the physical setup right is the single biggest factor in a smooth pairing experience.
+
+- **Ideal range:** hold phones 10–30 cm apart for the fastest, most reliable detection
+- **Indoor environments:** Griilll works well in most indoor settings, including homes, offices, and venues
+- **Metal surfaces and thick walls** can absorb or reflect BLE signals — if pairing is slow, step away from metal furniture or structural walls
+- **Crowded places** (trains, concerts, conferences) with many active Bluetooth devices may slow discovery due to signal competition — keep phones closer together and be patient for a few extra seconds
+
+## Multiple Players Nearby
+
+<Accordion title="What happens if more than two Griilll users are in range?">
+  If the app detects multiple nearby players, it displays a list of available opponents — each identified by their in-app username. You tap the person you want to challenge, and they receive a match request on their screen. Neither player is locked in until both sides confirm. This means you can always coordinate with your real-world opponent and match the right two usernames before committing.
+</Accordion>
+
+## What Is Shared During Pairing?
+
+<Note>
+  Only your **in-app username** and a temporary **game session token** are transmitted to your opponent during pairing. No personal data — including your phone number, email address, or real name — is ever shared with another device. The session token expires as soon as the game round ends.
+</Note>
+
+<Tip>
+  Keep both phones **unlocked** and the Griilll app **in the foreground** throughout the pairing process. iOS and Android both limit background Bluetooth activity to conserve battery, which can delay or interrupt discovery if the app isn't actively visible on screen.
+</Tip>
